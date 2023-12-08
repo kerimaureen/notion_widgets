@@ -58,8 +58,10 @@
 <body>
 
 	<nav class="navMenu  border">
-		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
-
+		<a id="hub" onclick="navigate(this.id)" href="#"> </i> HUB</a>
+		<a id="wellness" onclick="navigate(this.id)" href="#"> </i> WELLNESS</a>
+		<a id="finances" onclick="navigate(this.id)" href="#"> </i> FINANCES</a>
+		<a id="mindfulness" onclick="navigate(this.id)" href="#"> </i> MINDFULNESS</a>
 
 
 	</nav>
@@ -76,7 +78,14 @@
 		function navigate(id) {
 
 			if (id == 'home')
-				window.open("https://example.com", '_blank').focus();
+				window.open("https://example.com", '_parent').focus();
+			else if (id == 'wellness')
+				window.open("https://example.com", '_parent').focus();
+			else if (id == 'finances')
+				window.open("https://example.com", '_parent').focus();
+			else if (id == 'mindfulness')
+				window.open("https://example.com", '_parent').focus();
+			
 		
 
 		}
